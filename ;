@@ -6,13 +6,6 @@ import './App.css'
 
 
 class PageContainer extends Component {
-
-  renderPage() {
-    const page = this.props.routeParams.page || 'homepage'
-    const pageComponent = require(`./pages/${page}.jsx`).default
-    return React.createElement(pageComponent)
-  }
-
   render() {
     return (
       <div className="App">
@@ -20,7 +13,11 @@ class PageContainer extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>MainShayne233</h2>
         </div>
-        {this.renderPage()}
+          <p>blog about things I'm thinking about</p>
+          <p>not necessarily what I know</p>
+          <p>this is obviousily just a create-react-app</p>
+          <p>more to come</p>
+          <a href="https://github.com/MainShayne233/blog">possibly from you?</a>
       </div>
     )
   }
