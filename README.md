@@ -1,3 +1,3 @@
-# [blog] (www.mainshayne233.com)
+# blog
 
-[create-react-app] (https://github.com/facebookincubator/create-react-app) based blog
+[create-react-app] (https://github.com/facebookincubator/create-react-app) based [blog] (http://www.mainshayne233.com)
