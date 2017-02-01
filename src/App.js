@@ -9,7 +9,12 @@ class PageContainer extends Component {
 
   renderPage() {
     const page = this.props.routeParams.page || 'homepage'
-    const pageComponent = require(`./pages/${page}.jsx`).default
+    var pageComponent
+    try {
+     pageComponent = require(`./pages/${page}.jsx`).default
+    } catch(e) {
+      pageComponent = require(`./pages/missing.jsx`).default
+    } 
     return React.createElement(pageComponent)
   }
 
