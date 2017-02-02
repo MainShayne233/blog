@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
+
+
+function snakify(string) {
+  return string.split(' ').join('_')
+}
 
 const pages = [
+  'data duck typing in elixir',
 ]
 
 export default class Homepage extends Component {
 
-
-
   renderPages() {
     return pages.map((page, index) => {
       return (
-        <a
-          href={`/${page}`}
+        <Link
+          to={`/${snakify(page)}`}
           key={index}
           >
           {page}
-        </a>
+        </Link>
       )
     })
   }

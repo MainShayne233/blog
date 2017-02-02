@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Router, Route, browserHistory  } from 'react-router'
+import { Router, Route, Link, browserHistory  } from 'react-router'
 import logo from './logo.svg'
+import "../node_modules/semantic-ui/dist/semantic.min.css"
 import './App.css'
-
-
 
 class PageContainer extends Component {
 
@@ -19,11 +18,14 @@ class PageContainer extends Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>MainShayne233</h2>
+	        <Link style={{color: "white"}} to="/">
+            <h2>MainShayne233</h2>
+          </Link>
         </div>
         {this.renderPage()}
       </div>
